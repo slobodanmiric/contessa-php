@@ -1,0 +1,111 @@
+:root {
+    --plava: rgb(76, 181, 245);
+    --siva: rgb(183, 184, 182);
+    --zelana: rgb(52, 103, 92);
+    --svetlo_zelena: rgb(179, 193, 0);
+}
+
+body {
+    font-family: 'PT Sans', sans-serif;
+}
+h1, h2, h3, h4 {
+    font-family: 'Pinyon Script', cursive;
+}
+/* img {
+    max-width: 100%;
+} */
+.bg-light {
+    background-color: rgba(179, 193, 0, 0.7) !important;
+    box-shadow: 0 0 5px gray;
+}
+
+.navbar-brand {
+    font-family: 'Pinyon Script', cursive;
+    font-size: 2em;
+    font-weight: bold;;
+}
+header {
+    background-image: url(images/header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.feature-bg {
+    background: rgba(255, 255, 255, 0.3);
+    width: 100vh;
+    border-radius: 10px;
+}
+.feature-text {
+    font-size: 2rem;
+    line-height: 4rem;
+}
+.header_img {
+    min-height: 25vh;
+}
+.card-text {
+    font-size: 1.2rem;
+}
+.card {
+    margin-bottom: 20px;
+}
+.card-header {
+    padding: 60px 0 30px 0 !important;
+}
+.title {
+    color: var(--svetlo_zelena);
+    font-size: 3em;
+}
+.list-group-items {
+    font-size: 1.4rem;
+    color: #555;
+}
+footer {
+    padding: 50px 0;
+    background: rgba(179, 193, 0, 0.7);
+}
+footer a {
+    color: var(--zelena);
+    text-decoration: none;;
+}
+footer a:hover {
+    color: var(--svetlo_zelena);
+}
+
+@media(min-width: 768px) {
+    .feature-bg {
+        width: 60vh;
+    }
+    span {
+        position: absolute;
+        background: rgba(175,169,169,0.6);
+        height: 80px;
+        width: 80px;
+        line-height: 80px;
+        border-radius: 100%;
+        top: -40px;
+        left: -40px;
+        margin-left: 50%;
+        font-size: 1.8rem;
+
+    }
+    .card-header {
+        margin-bottom: 40px;
+    }
+}
+@media(max-width:768px) {
+    .title {
+        margin-top: 1em;
+    }
+    footer button {
+        margin-top: 1em;
+    }
+    footer .col-sm-4 {
+        border-bottom: 1px solid var(--svetlo_zelena);
+        padding: 20px 10px;;
+    }
+}
